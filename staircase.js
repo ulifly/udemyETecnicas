@@ -5,3 +5,11 @@
 // and every list i+1 is one item longer than list i. 
 // The order of the elements in the staircase doesn’t matter.
 
+function staircase(arr) {
+    let staircase = [];
+    for (let i = 0; i < arr.length; i++) {
+      
+    }
+ 
+}
+
