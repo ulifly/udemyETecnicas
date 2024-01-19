@@ -5,3 +5,34 @@
 // and every list i+1 is one item longer than list i. 
 // The order of the elements in the staircase doesn’t matter.
 
+
+// Here are some input/output examples that show what I mean:
+
+// Input: [1, 2, 3, 4, 5, 6]
+
+// Output: [[1], [2, 3], [4, 5, 6]]
+
+// Input: [1, 2, 3, 4, 5, 6, 7]
+
+// Output: False
+
+// In the example [1, 2, 3, 4, 5, 6, 7], the list of lists only has one element in its fourth list:
+
+// [[1], [2, 3], [4, 5, 6], [7]]
+
+// That is NOT equal to the length of the previous list plus one. 
+// The last list would have to have four elements to be a valid staircase
+
+
+
+
+
+
+
+function staircase(n) {
+    let staircase = [];
+    for (let i = 0; i < n; i++) {
+        staircase.push(Array(i + 1).fill(1));
+    }
+    return staircase;
+}
